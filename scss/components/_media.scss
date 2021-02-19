@@ -1,0 +1,27 @@
+.media{
+    display: flex;
+    // margin-bottom: 4.8rem;
+    &:last-of-type{
+        border-top: 1px solid $color-borders;
+        padding-top: 4.8rem;
+    }
+    &__title{
+        margin-top:0
+    }
+    &__body{
+        margin-top: 0;
+        margin-bottom: 3rem;
+        padding-left:6rem;
+    }
+    &__image{
+        margin-top: 1rem;
+    }
+    &__content{
+        font-size: 1.6rem;
+    }
+    @media screen and (min-width:768px) {
+        &{
+            max-width: 688px;
+        }
+    }
+}

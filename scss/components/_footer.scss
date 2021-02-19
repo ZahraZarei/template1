@@ -1,0 +1,66 @@
+.footer{
+    background: $footer-bg;
+    padding:0 2.5rem;
+    &__follow {
+        padding-top: 2rem;
+        font-size: 1.4rem;
+    }
+    &__lang{
+        padding: 2.4rem 0;
+        label{
+            display: block;
+            font-size: 1.4rem;
+            padding-bottom: .8rem;
+        }
+        select{
+            width: 200px;
+            padding: 5px;
+            font-size: 1.2rem;
+        }
+    }
+    &__legal{
+        line-height: 1.2;
+        a{
+            font-size: 1.2rem;
+            text-decoration: underline;
+        }
+        p{
+            padding-top: 2rem;
+            line-height: 1.8;
+            font-size: 1.2rem;
+            margin-bottom: 5rem;
+        }
+    }
+    @media screen and (min-width:768px) {
+        &__header{
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid darken($footer-bg,5%);
+            margin-bottom:2rem ;
+        }
+        &__body{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+        &__legal{
+            display: flex;
+            align-items: flex-start;
+            .list{
+                padding-left: 4rem;
+                display: inline-block;
+            }
+        }
+        & .collapsible{
+            border: 0;
+        }
+        & .collapsible__chevron{
+            display: none;
+        }
+        & .collapsible__content{
+            opacity: 1;
+            max-height: 100%;
+        }
+      
+    }
+}

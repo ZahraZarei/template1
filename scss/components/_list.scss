@@ -1,0 +1,29 @@
+.list{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 2rem;
+    &--inline{
+        padding-top: 1rem;
+    }
+    &--inline &__item{
+        display: inline-block;
+        margin-right: 2rem;
+    }
+    &__item{
+        padding: .4rem 0;
+        opacity: .8;
+    }
+    &--tick{
+        list-style-image: url('../images/tick.svg');
+        padding-left: 3rem;
+    }
+    &--tick &__item{
+        padding-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    @media screen and(min-width:1024px){
+        &--tick &__item{
+            padding-left: 0;
+        }
+    }
+}
